@@ -11,9 +11,11 @@ function HeroSection() {
         <p className="text-xl lg:text-3xl mb-6 text-green-400">
           Adeola Adenipekun: Stop-motion Animator & Production Designer
         </p>
-        <button className="bg-green-400 text-white text-lg px-6 py-3 rounded-lg shadow-lg hover:bg-green-500 transition duration-300">
-          Let's Work Together
-        </button>
+        <a href="#contact">
+            <button className="bg-green-400 text-white text-lg px-6 py-3 rounded-lg shadow-lg hover:bg-green-500 transition duration-300">
+            Let's Work Together
+            </button>
+        </a>
       </div>
 
       {/* Right Section: Hero Image */}

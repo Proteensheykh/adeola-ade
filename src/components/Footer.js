@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-6">
           <a
-            href="https://www.instagram.com/adeola"
+            href="https://www.instagram.com/dee_adgirl"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
@@ -23,7 +23,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.linkedin.com/in/adeola"
+            href="https://www.linkedin.com/in/adeola-adenipekun-a89370170"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://www.twitter.com/adeola"
+            href="https://www.x.com/Thisisadeolaa"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
@@ -39,7 +39,7 @@ const Footer = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.behance.net/adeola"
+            href="https://www.behance.net/deeadgirl"
             target="_blank"
             rel="noopener noreferrer"
             className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
