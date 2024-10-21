@@ -1,6 +1,29 @@
-import React from "react";
+import React from "react";  
 
 const ContactForm = () => {
+    
+    const handleSubmit = (event) => {
+        console.log("in event")
+        event.preventDefault();
+        console.log(event)
+      
+        const formData = new FormData(event.target);
+        
+        fetch("https://script.google.com/macros/s/AKfycbxqUbv6xx5t_75ML9AIYVWxXB4IJe1e5OfETOX_EsaNc9ergrur1dYxSyAMzYOqMq9_Gw/exec", {
+          method: "POST",
+          body: formData,
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.status === "success") {
+            alert("Form submitted successfully!");
+          } else {
+            alert("Something went wrong, please try again.");
+          }
+        })
+        .catch((error) => console.error("Error:", error));
+      };
+
   return (
     <section className="py-16 px-4 md:px-20 bg-fefae0 text-purple-800" id="contact">
       <h2 className="text-4xl font-semibold text-center mb-8">Want to work together?</h2>
@@ -17,7 +40,7 @@ const ContactForm = () => {
 
         {/* Right side: Contact form */}
         <div className="w-full lg:w-1/2 bg-white p-8 rounded-lg border-none">
-          <form action="#" method="POST">
+          <form onSubmit={handleSubmit}>
             {/* First Name */}
             <div className="mb-6">
               <label htmlFor="full-name" className="block mb-2 text-lg text-purple-800 font-semibold">
