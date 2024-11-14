@@ -13,7 +13,7 @@ module.exports = {
         lightGray: '#F3F4F6',
         purple900: '#240046',  // Adeola's brand dark color
         green400: '#A3D2CA',   // Button and accents
-      }
+      },
     },
   },
   plugins: [],
