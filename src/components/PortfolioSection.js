@@ -113,33 +113,8 @@ function PortfolioSection() {
     },
   ];
 
-  // Duplicate the portfolio items to create an infinite loop effect
+  // Duplicate items for infinite loop effect
   const extendedItems = [...portfolioItems, ...portfolioItems];
-
-  const handleScroll = () => {
-    const carousel = carouselRef.current;
-    if (carousel) {
-      const maxScrollLeft = carousel.scrollWidth / 2;
-      // If scrolled to the end, reset to the beginning
-      if (carousel.scrollLeft >= maxScrollLeft) {
-        carousel.scrollLeft = 0;
-      }
-      // If scrolled to the start, reset to the end
-      else if (carousel.scrollLeft <= 0) {
-        carousel.scrollLeft = maxScrollLeft;
-      }
-    }
-  };
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (carousel) {
-      carousel.addEventListener("scroll", handleScroll);
-      carousel.scrollLeft = carousel.scrollWidth / 4; // Start at the beginning of the first set
-
-      return () => carousel.removeEventListener("scroll", handleScroll);
-    }
-  }, []);
 
   return (
     <section className="bg-white py-16">
@@ -147,11 +122,11 @@ function PortfolioSection() {
         My Portfolio
       </h2>
 
-      <div className="relative mx-4 lg:mx-20 overflow-hidden">
-        {/* Carousel Container */}
+      <div className="relative overflow-hidden mx-16">
+        {/* Carousel Container with scrolling animation */}
         <div
-          ref={carouselRef}
-          className="portfolio-carousel flex space-x-8 overflow-x-auto snap-x snap-mandatory scroll-smooth"
+          className="portfolio-carousel flex space-x-8 animate-scroll overflow-hidden"
+          style={{ width: `${extendedItems.length * 100}%` }}
         >
           {extendedItems.map((item, index) => (
             <div
