@@ -10,49 +10,30 @@ function ClientsSection() {
     { name: "Beloxxi", src: beloxxiLogo },
     { name: "La Casera", src: lacaseraLogo },
     { name: "Vyrus Digital", src: vyrusLogo },
-    { name: "Snickers", src: snickersLogo },
-    { name: "Beloxxi", src: beloxxiLogo },
-    { name: "La Casera", src: lacaseraLogo },
-    { name: "Vyrus Digital", src: vyrusLogo },
-    { name: "Snickers", src: snickersLogo },
-    { name: "Beloxxi", src: beloxxiLogo },
-    { name: "La Casera", src: lacaseraLogo },
-    { name: "Vyrus Digital", src: vyrusLogo },
   ];
+
+  // Duplicate logos for seamless infinite scroll
+  const extendedLogos = [...logos, ...logos];
 
   return (
     <section className="bg-white py-16">
       <h2 className="text-center text-3xl lg:text-4xl font-bold text-darkBlue mb-8">
-      Creative Collaborations
+        Creative Collaborations
       </h2>
-      
+
       {/* Carousel Container */}
       <div className="mx-4 lg:mx-20 overflow-hidden relative">
-        <div className="flex items-center space-x-8 animate-scroll lg:space-x-16">
-          {logos.map((logo, index) => (
+        <div className="flex items-center space-x-4 lg:space-x-12 animate-infinite-scroll">
+          {extendedLogos.map((logo, index) => (
             <div
               key={index}
               className="flex-shrink-0 transform transition-transform duration-300 hover:scale-110"
-              style={{ width: "150px" }}
+              style={{ width: "120px", maxWidth: "150px" }}
             >
               <img
                 src={logo.src}
                 alt={`${logo.name} logo`}
-                className="w-full object-contain"
-              />
-            </div>
-          ))}
-          {/* Duplicate logos for seamless scrolling */}
-          {logos.map((logo, index) => (
-            <div
-              key={index + logos.length}
-              className="flex-shrink-0 transform transition-transform duration-300 hover:scale-110"
-              style={{ width: "150px" }}
-            >
-              <img
-                src={logo.src}
-                alt={`${logo.name} logo`}
-                className="w-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}

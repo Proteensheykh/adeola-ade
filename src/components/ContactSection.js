@@ -100,7 +100,7 @@ const ContactForm = () => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-400"
                 required
               >
-                <option value="" disabled selected>Select a project</option>
+                <option defaultValue="" disabled>Select a project</option>
                 <option value="creative direction & consultation">Creative Direction and consultation</option>
                 <option value="stop motion">Stop-motion animation</option>
                 <option value="production design">Production design</option>
@@ -150,7 +150,7 @@ const ContactForm = () => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-400"
                 required
               >
-                <option value="" disabled selected>Select your budget range</option>
+                <option defaultValue="" disabled>Select your budget range</option>
                 <option value="less_than_5000">Less than $5,000</option>
                 <option value="5000_10000">$5,000 - $10,000</option>
                 <option value="10000_20000">$10,000 - $20,000</option>

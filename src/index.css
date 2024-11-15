@@ -29,17 +29,8 @@ body {
   animation: blink 1s step-start infinite;
 }
 
-/* Hide scrollbar for the carousel */
-.portfolio-carousel::-webkit-scrollbar {
-  display: none;
-}
-.portfolio-carousel {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Portfolio Carousel - Smooth Scrolling Animation */
-@keyframes scroll {
+/* Infinite Scroll Animation */
+@keyframes infinite-scroll {
   0% {
     transform: translateX(0);
   }
@@ -48,14 +39,17 @@ body {
   }
 }
 
-.portfolio-carousel {
-  animation: scroll 30s linear infinite;
+/* Carousel animation with different speeds for mobile and desktop */
+.animate-infinite-scroll {
+  display: flex;
+  animation: infinite-scroll 30s linear infinite;
 }
 
-/* Infinite scroll animation */
-.animate-scroll {
-  display: flex;
-  animation: scroll 10s linear infinite;
+/* Slow down animation on smaller screens for smoother experience */
+@media (max-width: 768px) {
+  .animate-infinite-scroll {
+    animation-duration: 20s;
+  }
 }
 
 
