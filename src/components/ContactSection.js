@@ -28,7 +28,7 @@ const ContactForm = () => {
       };
 
   return (
-    <section className="py-16 px-4 md:px-20 bg-fefae0 text-purple-800" id="contact">
+    <section className="py-16 px-4 md:px-20 bg-fefae0 text-darkBlue" id="contact">
       <h2 className="text-4xl font-semibold text-center mb-8">Want to work together?</h2>
       <div className="flex flex-col lg:flex-row items-center justify-between lg:space-x-8">
         
@@ -46,7 +46,7 @@ const ContactForm = () => {
           <form onSubmit={handleSubmit}>
             {/* First Name */}
             <div className="mb-6">
-              <label htmlFor="full-name" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="full-name" className="block mb-2 text-lg text-darkBlue font-semibold">
                 Full Name
               </label>
               <input
@@ -61,7 +61,7 @@ const ContactForm = () => {
 
             {/* Email */}
             <div className="mb-6">
-              <label htmlFor="email" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="email" className="block mb-2 text-lg text-darkBlue font-semibold">
                 Email
               </label>
               <input
@@ -76,7 +76,7 @@ const ContactForm = () => {
 
             {/* Company */}
             <div className="mb-6">
-              <label htmlFor="company" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="company" className="block mb-2 text-lg text-darkBlue font-semibold">
                 Company
               </label>
               <input
@@ -91,7 +91,7 @@ const ContactForm = () => {
 
             {/* Project type */}
             <div className="mb-6">
-              <label htmlFor="project-type" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="project-type" className="block mb-2 text-lg text-darkBlue font-semibold">
                 What kind of project?
               </label>
               <select
@@ -111,7 +111,7 @@ const ContactForm = () => {
 
             {/* Project Description */}
             <div className="mb-6">
-              <label htmlFor="project-description" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="project-description" className="block mb-2 text-lg text-darkBlue font-semibold">
                 Briefly describe what you're looking for
               </label>
               <textarea
@@ -126,7 +126,7 @@ const ContactForm = () => {
 
             {/* Timeline */}
             <div className="mb-6">
-              <label htmlFor="timeline" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="timeline" className="block mb-2 text-lg text-darkBlue font-semibold">
                 What’s your tentative timeline for this project?
               </label>
               <input
@@ -141,7 +141,7 @@ const ContactForm = () => {
 
             {/* Budget Range */}
             <div className="mb-6">
-              <label htmlFor="budget" className="block mb-2 text-lg text-purple-800 font-semibold">
+              <label htmlFor="budget" className="block mb-2 text-lg text-darkBlue font-semibold">
                 What budget range do you fall in for the overall project?
               </label>
               <select

@@ -1,10 +1,6 @@
 import React from "react";
-import TypewriterText from "./TypewriterText";
 
 const AboutSection = () => {
-  const words = ["Do you know who I am?", "Who are you?", "I am a"];
-  const typewriterStyle = "text-4xl font-semibold text-purple-800";
-
   return (
     <section id="about" className="flex flex-col md:flex-row items-center justify-between py-16 px-4 md:px-20 bg-pastel-blue-100">
       <div className="w-full md:w-1/2 mb-8 md:mb-0 lg:mr-8" >
@@ -15,14 +11,11 @@ const AboutSection = () => {
         />
       </div>
       <div className="md:w-1/2 text-center md:text-left space-y-4">
-      <TypewriterText 
-            words={words} 
-            className={typewriterStyle} 
-            elementType="h2" 
-            loop={false}
-            />
+      <h2 className="text-4xl font-semibold text-darkBlue">
+        Meet me
+      </h2>
         <p className="text-lg text-gray-600">
-        ...creative entrepreneur expressing my creativity as a visual storyteller 
+        I am a creative entrepreneur expressing my creativity as a visual storyteller 
         through creative direction, stopmotion animation, production design and video 
         production.
         </p>

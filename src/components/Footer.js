@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaBehance } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer id="foot" className="bg-fefae0 py-8 text-purple-800 mx-16">
+    <footer id="foot" className="bg-fefae0 py-8 text-darkBlue mx-16">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         
         {/* Footer Text */}
@@ -18,7 +18,7 @@ const Footer = () => {
             href="https://www.instagram.com/dee_adgirl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
+            className="text-2xl text-darkBlue hover:text-green-400 transition duration-300"
           >
             <FaInstagram />
           </a>
@@ -26,7 +26,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/adeola-adenipekun-a89370170"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
+            className="text-2xl text-darkBlue hover:text-green-400 transition duration-300"
           >
             <FaLinkedin />
           </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             href="https://www.x.com/Thisisadeolaa"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
+            className="text-2xl text-darkBlue hover:text-green-400 transition duration-300"
           >
             <FaTwitter />
           </a>
@@ -42,7 +42,7 @@ const Footer = () => {
             href="https://www.behance.net/deeadgirl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl text-purple-800 hover:text-green-400 transition duration-300"
+            className="text-2xl text-darkBlue hover:text-green-400 transition duration-300"
           >
             <FaBehance />
           </a>

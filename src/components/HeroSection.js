@@ -3,17 +3,17 @@ import TypewriterText from "./TypewriterText";
 
 function HeroSection() {
   const roles = ["Creative Director", "Stop-motion Animator", "Production Designer"];
-  const typewriterStyle = "text-lg lg:text-2xl font-semibold text-green-400";
+  const typewriterStyle = "text-base lg:text-2xl font-semibold text-green-400";
 
   return (
-    <section id="home" className="bg-white text-purple-800 flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 lg:px-20 py-16">
+    <section id="home" className="bg-white text-darkBlue flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 lg:px-20 py-16">
       {/* Left Section: Text and Button */}
       <div className="flex flex-col items-start lg:w-1/2 text-left lg:mr-8 lg:mt-0">
         <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-4">
           Elevate Your Brand with Creative Vision
         </h1>
         <div className="flex items-center mb-6 lg:mb-10">
-          <span className="text-lg lg:text-2xl font-semibold text-green-400 mr-1">
+          <span className="text-base lg:text-2xl font-semibold text-green-400 mr-1">
             Adeola Adenipekun: 
           </span> 
           <TypewriterText 
