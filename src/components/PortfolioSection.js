@@ -79,10 +79,9 @@
 
 // export default PortfolioSection;
 
-import React, { useRef, useEffect } from "react";
+import React from "react";
 
 function PortfolioSection() {
-  const carouselRef = useRef(null);
 
   // Original portfolio items
   const portfolioItems = [
