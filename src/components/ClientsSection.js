@@ -9,7 +9,15 @@ function ClientsSection() {
     { name: "Snickers", src: snickersLogo },
     { name: "Beloxxi", src: beloxxiLogo },
     { name: "La Casera", src: lacaseraLogo },
-    { name: "Vyrus Digital", src: vyrusLogo }, 
+    { name: "Vyrus Digital", src: vyrusLogo },
+    { name: "Snickers", src: snickersLogo },
+    { name: "Beloxxi", src: beloxxiLogo },
+    { name: "La Casera", src: lacaseraLogo },
+    { name: "Vyrus Digital", src: vyrusLogo },
+    { name: "Snickers", src: snickersLogo },
+    { name: "Beloxxi", src: beloxxiLogo },
+    { name: "La Casera", src: lacaseraLogo },
+    { name: "Vyrus Digital", src: vyrusLogo },
   ];
 
   return (

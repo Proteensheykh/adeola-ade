@@ -113,7 +113,7 @@ function PortfolioSection() {
   ];
 
   // Duplicate items for infinite loop effect
-  const extendedItems = [...portfolioItems, ...portfolioItems];
+  const extendedItems = [...portfolioItems, ...portfolioItems, ...portfolioItems];
 
   return (
     <section className="bg-white py-16">
