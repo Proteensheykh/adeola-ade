@@ -57,7 +57,7 @@ const PortfolioSection = () => {
   return (
     <section id="portfolio" className="py-16 px-4 md:px-20 bg-pastel-pink-100">
       <h2 className="text-4xl font-semibold text-center text-darkBlue mb-8">
-        Portfolio
+        Stuff I made
       </h2>
       <Slider {...settings}>
         {portfolioItems.map((item) => (
